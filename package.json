@@ -16,9 +16,8 @@
     }
   },
   "lint-staged": {
-    "./src/*.js": [
-      "npx standard --fix",
-      "git add"
+    "*.{js,jsx}": [
+      "npx standard --fix"
     ]
   }
 }
