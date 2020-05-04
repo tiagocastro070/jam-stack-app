@@ -1,0 +1,44 @@
+.add-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-default3);
+  font-size: 0.9rem;
+
+  &:hover {
+    background-color: var(--color-default2);
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &.justify,
+  &.justify-reverse {
+    justify-content: space-between;
+    
+    .btn {
+      margin: 0;
+    }
+  }
+
+  &.justify {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &.justify {
+    justify-content: space-between;
+  }
+  
+  .btn {
+    margin-right: 15px;
+  }
+}

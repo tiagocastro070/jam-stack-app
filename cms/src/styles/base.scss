@@ -1,0 +1,52 @@
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+	color: var(--color-default);
+	font-family: var(--font);
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-default4);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+	max-width: 100%;
+}
+
+// bootstrap override
+.form-control,
+.custom-file-label {
+  font-size: 0.9em;
+}
+
+#root {
+	height: 100%;
+	overflow: auto;
+}
+
+.list-divider {
+  height: 1px;
+  margin: 5px 0;
+  background-color: var(--color-default4);
+}

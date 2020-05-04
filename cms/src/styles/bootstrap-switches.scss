@@ -1,0 +1,21 @@
+.custom-switch {
+  padding-left: 2.75rem;
+  
+  .custom-control-label {
+
+    &:before {
+      width: 36px;
+      height: 22px;
+      top: 0;
+      left: -44px;
+      border-radius: 20px;
+    }
+
+    &:after {
+      width: 16px;
+      height: 16px;
+      top: 3px;
+      left: -40px;
+    }
+  }
+}

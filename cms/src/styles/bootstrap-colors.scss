@@ -1,0 +1,8 @@
+// Overrides bootstrap default colors
+
+label:before,
+.custom-control-input:checked~.custom-control-label::before,
+.btn-primary {
+  border-color: var(--color-main);
+  background-color: var(--color-main);
+}

@@ -1,0 +1,44 @@
+.meta-og {
+  max-width: 500px;
+  margin-bottom: 30px;
+  border: 1px solid #dadde1;
+  background-color: #f2f3f5;
+  color: #1d2129;
+}
+
+.meta-og__infos {
+  padding: 10px 12px;
+  border-top: 1px solid #dadde1;
+}
+
+.meta-og__website,
+.meta-og__title,
+.meta-og__description {
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta-og__website {
+  height: 11px;
+  color: #606770;
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+
+.meta-og__title {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.meta-og__description {
+  height: 18px;
+  margin-top: 3px;
+  color: #606770;
+  font-size: 14px;
+  line-height: 20px;
+}

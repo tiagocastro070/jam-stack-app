@@ -1,0 +1,32 @@
+.modal {
+  display: block !important;
+  opacity: 0;
+  visibility: hidden;
+  overflow: auto !important;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: transparentize($color: black, $amount: 0.4)
+  }
+
+  .modal-content {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-main-dark);
+    color: white;
+  }
+
+  .modal-footer,
+  .modal-header {
+    border: none;
+  }
+
+  .modal-title {
+    font-size: 30px;
+  }
+
+  .close {
+    color: white;
+  }
+}

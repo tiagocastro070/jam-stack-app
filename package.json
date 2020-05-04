@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "Tiago Castro",
+    "url": "https://github.com/tiagocastro070"
+  },
+  "name": "jam-stack-app",
+  "version": "0.1.0",
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "standard": "^14.3.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./src/*.js": [
+      "npx standard --fix",
+      "git add"
+    ]
+  }
+}
