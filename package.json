@@ -16,7 +16,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "api/src/*.js": [
+      "npx standard --fix"
+    ],
+    "cms/src/*.{js,jsx}": [
       "npx standard --fix"
     ]
   }
