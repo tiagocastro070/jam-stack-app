@@ -8,6 +8,7 @@ const saltRounds = 10
  * @apiGroup Users
  *
  * @apiParam {Number} id User id
+ * @apiParam {Number} [active]
  * @apiParam {String} [email]
  * @apiParam {String} [username]
  * @apiParam {String} [password]

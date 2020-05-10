@@ -4,6 +4,7 @@ exports.up = function(knex) {
     table.increments('id')
     table.int('roleid').notNullable()
     table.foreign('roleid').references('roles.id')
+    table.boolean('active').notNullable().defaultTo(true)
     table.string('email', 255).notNullable().unique()
     table.string('username', 255).notNullable().unique()
     table.string('password', 255).notNullable()

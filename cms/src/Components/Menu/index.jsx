@@ -3,14 +3,16 @@ import { NavLink } from 'react-router-dom';
 import { FaRegFile, FaRegNewspaper } from 'react-icons/fa';
 import { FiSettings, FiUsers } from 'react-icons/fi';
 import { MdPersonalVideo } from 'react-icons/md';
-import { GoSettings } from 'react-icons/go';
 
+import jamStackLogo from '../../assets/jamstack-logo.svg'
 import './index.scss';
 
 export default function Menu() {
   return (
     <div className="menu">
-      <div className="menu__logo"><GoSettings color="#5E81F4" size="4.2em" /></div>
+      <div className="menu__logo">
+        <img src={ jamStackLogo } alt=""/>
+      </div>
       <ul>
         <li className="menu__item">
           <NavLink to="/dashboard/" activeClassName="active" exact>

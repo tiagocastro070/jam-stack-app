@@ -7,7 +7,7 @@ const saltRounds = 10
  * @apiName CreateUser
  * @apiGroup Users
  * 
- * @apiParam {Number} roleid User role id
+ * @apiParam {Number} active=1 Sets users to be active or not
  * @apiParam {String} email User email
  * @apiParam {String} username Username
  * @apiParam {String} password Password
@@ -29,11 +29,13 @@ const saltRounds = 10
 module.exports = async function (request, response) {
   const { roleid, email, username, userpassword, photo, fullname } = request.body
 
+  const active = true
   let password = null
   await bcrypt.hash(userpassword, saltRounds).then(hash => (password = hash))
 
   const result = await connection('users').insert({
     roleid,
+    active,
     email,
     username,
     password,

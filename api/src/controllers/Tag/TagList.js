@@ -8,10 +8,7 @@ const connection = require('../../database/connection')
 * @apiSuccess {Object[]} users Users list.
 */
 module.exports = async function (request, response) {
- const result = await connection('users as u')
-   .select('u.id', 'u.active', 'u.email', 'u.username', 'u.password', 'u.photo', 'u.fullname', 'r.name')
-   .leftJoin('roles as r', 'u.roleid', '=', 'r.id')
-   // .where('r.id', '>=', Number(request.headers.authorization))
+ const result = await connection('tags').select('*')
 
  return response.json(result)
 }
